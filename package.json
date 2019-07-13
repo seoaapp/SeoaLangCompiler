@@ -1,0 +1,25 @@
+{
+  "name": "seoalangcompiler",
+  "version": "0.1.0",
+  "description": "Compiler for Seoa-Lang",
+  "main": "seoac.js",
+  "scripts": {
+    "test": "node seoac ./test/test.seoa"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seoaapp/SeoaLangCompiler.git"
+  },
+  "keywords": [
+    "compiler",
+    "seoa",
+    "seoa-lang",
+    "language"
+  ],
+  "author": "Seoa Lang Development Team",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/seoaapp/SeoaLangCompiler/issues"
+  },
+  "homepage": "https://github.com/seoaapp/SeoaLangCompiler#readme"
+}
