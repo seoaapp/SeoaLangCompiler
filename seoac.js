@@ -22,7 +22,7 @@ const targetFile = process.argv[2]
 
 if (!targetFile || process.argv.includes('-h') || process.argv.includes('--help')) {
   // Command Help Message Here
-  console.log(`Seoa Language Compiler v${version}
+  console.log(`Seoa Language v${version} - Compiler
 
 Usage: seoac [Options] filename
 
@@ -50,7 +50,8 @@ function compile() {
   2. 필요한 파일 리스트를 배열에 저장
   3. 파일을 스캔하면서 main 함수 찾기 (만약 없을 경우 Error)
   4. parser에 파일 하나하나씩 전송
-  5. 지금 많은 혼란이 오고 있으니 나중에 작성 -_- 그럼 전 자러갑니다
+  5. parser가 해당 파일을 토큰으로 변환
+  6. 그걸 seoac가 다시 받아서 cgen을 불러 코드 만듬 (일단 c언어)
   */
   var user_files = [];
 
