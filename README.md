@@ -19,6 +19,7 @@ token.js - 토큰 정의된 enum
 compiler/cgen.js - c언어 코드 생성 (컴파일러 전용)
 
 seoa (그냥 실행): seoa.js(파일 읽기) -> parser.js(토큰 변환) -> seoa.js(실행)
+
 seoac (컴파일): seoa.js(파일 읽기) -> parser.js(토큰 변환) -> seoa.js(다시 받아서) -> compiler/`language-to-compile`gen.js (코드 변환) (예: `cgen.js` - c언어로 변환)
 
 
