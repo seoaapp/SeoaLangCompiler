@@ -1,0 +1,36 @@
+require = {
+  <some_module> ; 모듈을 넣습니다, 모듈 설치방법은 seoap install <모듈이름> ; local
+}
+
+fun start(args) {
+  con < 'Hello, world! ;<-이것은 주석입니다
+
+  n = 2 ; 선언은 이와 같이 합니다
+  m = 5
+
+  con < n + m ; 사칙연산은 이와 같이 합니다
+
+  for (i < 0..10) {
+    con < i ; 0 부터 10까지 출력합니다
+  }
+  
+  for (i < 10..0) {
+    con < i ; 10 부터 0까지 거꾸로 출력합니다
+  }
+  
+  con < '0' ; 숫자 0을 표현할때는 이와 같이 합니다 (seoa언어는 기본적으로 자료형이 없습니다)
+  
+  con < 0 ; 프로그램을 정상종료합니다
+}
+
+class bot {
+
+}
+
+; SEOA 는 NODEJS 랑 컴파일러를 믹스한 언어이고 간단한 언어입니다!
+;* 
+  이것도 주석입니다 
+  seoa: node와 같은기능으로 파일을 실행할 수 도 있고 명령을 즉시 실행할 수도 있음 (Repl 가능)
+  seoac: .seoa파일을 .exe파일로 컴파일하는 컴파일러 (.seoa > .c > .exe)
+  seoap: seoa package 
+*;
